@@ -21,17 +21,21 @@ class FlexibleTextEditingController extends TextEditingController {
   /// /// FlexibleTextEditingController controller = FlexibleTextEditingController();
   /// ```
   /// {@end-tool}
-  FlexibleTextEditingController({required this.styler, String? text }):
-    super(text: text);
+  FlexibleTextEditingController({this.styler, String? text})
+      : super(text: text);
 
-  TextSpan Function(String, TextStyle?) styler;
-
+  TextSpan Function(String, TextStyle?)? styler;
 
   @override
   TextSpan buildTextSpan(
       {required BuildContext context,
       TextStyle? style,
       required bool withComposing}) {
-    return styler(text, style);
+    if (this.styler == null) {
+      return super.buildTextSpan(
+          context: context, style: style, withComposing: withComposing);
+    } else {
+      return styler!(text, style);
+    }
   }
 }
