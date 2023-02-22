@@ -1,16 +1,53 @@
-# flexible_text_editing_controller
-
-monki1@github
-
+# flexible_text_editing_controller_flutter
+An extended text editing controller that supports different inline styles for custom regex.
+###### a text editing controller that can display suggestion text after input, and style input and suggestion ( can be configured to look like a like a code editor )
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### 1.Depend on& Install it
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+$ flutter pub add flexible_text_editing_controller
+$ flutter pub get
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 2. Import it
+
+```dart
+import'flexible_text_editing_controller/flexible_text_editing_controller.dart';
+```
+
+## Usage
+```dart
+TextSpan styler(String text, TextStyle? defaultStyle) {
+  List<TextSpan> children = [];
+  for (int i = 0; i < text.length; i++) {
+    i % 2 == 0
+        ? children.add(TextSpan(
+        text: text.substring(i, i + 1),
+        ///red for even, 
+        style: TextStyle(color: Colors.red)))
+        : children.add(TextSpan(
+        text: text.substring(i, i + 1),
+        ///blue for odd
+        style: TextStyle(color: Colors.blue)));
+  }
+  return TextSpan(style: defaultStyle, children: children);
+}
+FlexibleTextEditingController controller = FlexibleTextEditingController(styler: styler);
+
+//TextFormField(controller: controller);
+```
+
+## Versioning
+
+- **V1.0.0** - First Release.
+
+## Authors
+
+**monki1** - [Github](https://github.com/monki1)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+# flexible_text_editing_controller_flutter
