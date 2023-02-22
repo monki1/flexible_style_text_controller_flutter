@@ -1,0 +1,23 @@
+name: flexible_text_editing_controller
+description: An extended text editing controller that supports different inline styles
+authors:
+  - monki1 <https://github.com/monki1>
+version: 1.0.0
+homepage: https://github.com/monki1/flexible_style_text_controller_flutter
+#inspiration: rich_text_controller
+#   url: https://github.com/micazi/rich_text_controller
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
