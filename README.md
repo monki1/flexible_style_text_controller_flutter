@@ -4,14 +4,25 @@ An extended text editing controller that supports different inline styles for cu
 ## Getting Started
 
 
-### 1.Depend on& Install it
+### 1.Depend on it
 
 ```
 $ flutter pub add flexible_text_editing_controller
-$ flutter pub get
+
+```
+#### or add to yaml file manually
+```yaml
+  flexible_text_editing_controller:
+    git:
+      url: https://github.com/monki1/flexible_text_editing_controller_flutter
+      ref: 71a61c1
+```
+### 2. Install it
+```commandline
+flutter pub get
 ```
 
-### 2. Import it
+### 3. Import it
 
 ```dart
 import'flexible_text_editing_controller/flexible_text_editing_controller.dart';
