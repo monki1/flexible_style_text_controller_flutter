@@ -53,7 +53,7 @@ TextSpan styler(String text, TextStyle? defaultStyle) {
 
 ## Versioning
 
-- **V1.0.0** - First Release.
+- **V1.0.0+2** - added demo.
 
 ## Authors
 
