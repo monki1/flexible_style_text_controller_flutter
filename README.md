@@ -1,6 +1,6 @@
 # flexible_text_editing_controller_flutter
 An extended text editing controller that supports different inline styles for custom regex.
-###### a text editing controller that can display suggestion text after input, and style input and suggestion ( can be configured to look to a like a code editor )
+###### a text editing controller that can display suggestion text after input, and style input and suggestion ( can be configured to highlight syntax)
 ![demo.gif](demo.gif)
 demo: https://github.com/monki1/flutter_flexible_text_editing_controller_demo
 
