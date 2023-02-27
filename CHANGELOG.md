@@ -1,1 +1,3 @@
 - **V1.0.0** - First Release.
+- **V1.0.0+1** - styler is optional
+- **V1.0.0+2** demo gif added
