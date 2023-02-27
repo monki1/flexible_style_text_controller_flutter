@@ -8,18 +8,25 @@ demo: https://github.com/monki1/flutter_flexible_text_editing_controller_demo
 
 
 ### 1.Depend on it
+#### command line
 
 ```
 $ flutter pub add flexible_text_editing_controller
 
 ```
-#### or add to yaml file manually
+#### or add to yaml
+###### from git
 ```yaml
   flexible_text_editing_controller:
     git:
       url: https://github.com/monki1/flexible_text_editing_controller_flutter
       ref: 71a61c1
 ```
+###### from pub.dev
+```yaml
+  flexible_text_editing_controller: ^1.0.0+2
+ ```
+  
 ### 2. Install it
 ```commandline
 flutter pub get
