@@ -20,7 +20,7 @@ $ flutter pub add flexible_text_editing_controller
   flexible_text_editing_controller:
     git:
       url: https://github.com/monki1/flexible_text_editing_controller_flutter
-      ref: 71a61c1
+      ref: 098ad30
 ```
 ###### from pub.dev
 ```yaml
